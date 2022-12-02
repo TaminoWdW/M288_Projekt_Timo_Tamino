@@ -240,15 +240,3 @@ form button:hover {
 }
 
 
-footer {
-    height: 3rem;
-    min-height: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #2d6166;
-    color: white;
-
-}
