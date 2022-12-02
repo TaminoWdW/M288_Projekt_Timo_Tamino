@@ -1,0 +1,240 @@
+@import url('https:@//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.einstiegsseite {
+    height: 100vh;
+    width: 100%;
+    background-color: #2d6166;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 .begr {
+    width: 100vw;
+}
+
+
+.begr {
+
+    font-weight: 600;
+    font-size: 3rem;
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.begr2 {
+
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    border-radius: 7px;
+
+}
+
+.begr2:hover {
+    background-color: white;
+    color: #3f888f;
+
+    transition: .5s;
+}
+
+#formular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background-color: #3f888f;
+}
+
+
+#headermantel {
+    position: sticky;
+    width: 100%;
+    display: block;
+
+}
+
+#header {
+    background-color: #2d6166;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+
+
+}
+
+
+
+#headermantel #header a {
+    font: 'Nunito', sans-serif;
+    padding: 1rem;
+    margin: 1rem;
+
+    text-decoration: none;
+    color: white;
+    font-style: none;
+    border-radius: 8px;
+    min-width: 10rem;
+    display: flex;
+    justify-content: center;
+    border: white 1px solid;
+}
+
+.headerlinks {
+    display: flex;
+}
+
+#headermantel #header a:hover {
+    background-color: white;
+    color: #3f888f;
+
+    transition: .5s;
+}
+
+
+
+::selection {
+    color: white;
+    background-color: #3f888f;
+
+}
+
+.mantel {
+    width: 370px;
+    padding: 25px;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05)
+}
+
+.mantel header {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mantel form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid #3f888f;
+}
+
+form .liste {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liste .select-box {
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    border: 1px solid #999;
+}
+
+.select-box img {
+    max-width: 21px;
+}
+
+.select-box select {
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background: white;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.liste .icon {
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+form .umrechnungs-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button {
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #3f888f;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #2d6166;
+}
+
+
+.platzhalter {
+    color: black;
+}
+
+#einstiegsseite:disabled {
+    display: none;
+}
+
+
+.unsichtbar {
+    display: none;
+    transition: 1s;
+}
