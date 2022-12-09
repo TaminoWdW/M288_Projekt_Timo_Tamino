@@ -60,6 +60,7 @@ function getExchangeRate() {
         let exchangeRate = result.conversion_rates[toCurrency.value]; // benutzer ZU Währungsrate bekommen
         let totalExRate = (amountVal * exchangeRate).toFixed(2); // Eingegenen Wert mit Users ZU Rate multiplitzieren
         exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;//Text ausgabe
+
     })
         .catch(() => { exchangeRateTxt.innerText = "Fehler, überprüfen sie Ihre Internetverbindung oder kontaktieren sie Tamino." }) //Falls Fehler passiert (oder kein Internet)
 }
