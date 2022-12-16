@@ -100,3 +100,29 @@ seiteButton.addEventListener("click", e => {
     myElement.classList.remove("einstiegsseite")
     myElement.classList.add("unsichtbar");
 });
+
+
+
+
+
+
+
+
+
+
+function myFunction()
+
+{
+    var un = document.forms ["myForm"]["Uname"].value;
+    var pw = document.forms ["myForm"]["Pass"].value;
+    if (un=="student" && pw=="1234")
+    {
+        window.location.href="rechner.html";
+    }
+    else
+    {
+        alert("Falsches Passwort oder falscher Name!");
+    }
+}
+
+
