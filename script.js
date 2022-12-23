@@ -2,6 +2,7 @@ const dropList = document.querySelectorAll("form select"),
     fromCurrency = document.querySelector(".ausgang select"),
     toCurrency = document.querySelector(".ziel select"),
     getButton = document.querySelector("form button"),
+
     seiteButton = document.querySelector(".begr2"),
     homeButton = document.querySelector("#homee");
 // importieren die Formulare / den Button vom HTML
