@@ -1,4 +1,4 @@
-let country_list = {
+let alleWaehrungen = {
     "AED": "AE",
     "AFN": "AF",
     "XCD": "AG",
@@ -151,9 +151,5 @@ let country_list = {
     "UZS": "UZ",
     "VEF": "VE",
     "VND": "VN",
-    "VUV": "VU",
-    "YER": "YE",
-    "ZAR": "ZA",
-    "ZMK": "ZM",
-    "ZWD": "ZW"
+    "VUV": "VU"
 }
