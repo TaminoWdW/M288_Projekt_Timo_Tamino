@@ -37,13 +37,13 @@ exchangeIcon.onclick = function () {
 function umrechnungRate() {
     let eingabeWert = document.querySelector("form input").value;
     const ladeText = document.querySelector("form .umrechnungs-rate");
-
+    let eingabeW = eingabeWert.value
     //falls feld leer / 0 drin -> automatisch 1
     if (eingabeWert == "") {
-        amount.value = "1";
+        eingabeWert.value = "1";
         eingabeWert = 1;
     } else if (eingabeWert == "0") {
-        amount.value = "1";
+        eingabeWert.value = "1";
         eingabeWert = 1;
     }
     //Rechnet alles Um.
@@ -57,24 +57,24 @@ function umrechnungRate() {
         .then(response => response.json())
         .then(data => {
             let rate = data.conversion_rates[zielW.value];
-            let total = eingabeWert * rate;
+            let total = (eingabeWert * rate).toFixed(2);
             ladeText.innerText = `${eingabeWert} ${ausgangsW.value} = ${total} ${zielW.value}`;
         })
 };
 // Extras
 // Extras
 // Extras
-var myElement = document.getElementById('einstiegsseite');
+var einstieg = document.getElementById('einstiegsseite');
 var bounding = myElement.getBoundingClientRect();
 
 homeButton.addEventListener("click", e => {
-    myElement.classList.remove("unsichtbar");
-    myElement.classList.add("einstiegsseite")
+    einstieg.classList.remove("unsichtbar");
+    einstieg.classList.add("einstiegsseite")
 });
 
 seiteButton.addEventListener("click", e => {
-    myElement.classList.remove("einstiegsseite")
-    myElement.classList.add("unsichtbar");
+    einstieg.classList.remove("einstiegsseite")
+    einstieg.classList.add("unsichtbar");
 });
 //Loginsystem
 //Loginsystem
