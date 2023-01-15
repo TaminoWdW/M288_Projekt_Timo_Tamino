@@ -1,9 +1,9 @@
-const dropList = document.querySelectorAll("form select");
 const ausgangsW = document.querySelector(".ausgang select");
 const zielW = document.querySelector(".ziel select");
 const knopf = document.querySelector("form button");
 const seiteButton = document.querySelector(".begr2");
 const homeButton = document.querySelector("#homee");
+const dropList = document.querySelectorAll("form select");
 // importieren die Formulare / den Button vom HTML
 
 for (let i = 0; i < dropList.length; i++) {
@@ -32,6 +32,7 @@ exchangeIcon.onclick = function () {
     let temp = ausgangsW.value; //temporäre währungscode in der "von" Liste
     ausgangsW.value = zielW.value;
     zielW.value = temp;
+
     umrechnungRate(); //abrufen
 }
 function umrechnungRate() {
@@ -65,7 +66,7 @@ function umrechnungRate() {
 // Extras
 // Extras
 var einstieg = document.getElementById('einstiegsseite');
-var bounding = myElement.getBoundingClientRect();
+var bounding = einstieg.getBoundingClientRect();
 
 homeButton.addEventListener("click", e => {
     einstieg.classList.remove("unsichtbar");
