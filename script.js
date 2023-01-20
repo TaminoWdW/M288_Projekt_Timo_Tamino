@@ -66,7 +66,6 @@ function umrechnungRate() {
 // Extras
 // Extras
 var einstieg = document.getElementById('einstiegsseite');
-var bounding = einstieg.getBoundingClientRect();
 
 homeButton.addEventListener("click", e => {
     einstieg.classList.remove("unsichtbar");
@@ -77,6 +76,8 @@ seiteButton.addEventListener("click", e => {
     einstieg.classList.remove("einstiegsseite")
     einstieg.classList.add("unsichtbar");
 });
+
+
 //Loginsystem
 //Loginsystem
 //Loginsystem

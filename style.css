@@ -121,9 +121,9 @@ h1 .begr {
 }
 
 .mantel {
-    width: 370px;
-    padding: 25px;
-    border-radius: 7px;
+    width: 450px;
+    padding: 30px;
+    border-radius: 10px;
     background-color: white;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05)
 }
@@ -167,7 +167,7 @@ form .liste {
     display: flex;
     margin-top: 20px;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 .liste .select-box {
@@ -178,6 +178,7 @@ form .liste {
     border-radius: 4px;
     justify-content: center;
     border: 1px solid #999;
+    margin-right: 70px;
 }
 
 .select-box img {
@@ -201,11 +202,6 @@ form .liste {
     border-right: 2px solid #ffffff;
 }
 
-.liste .icon {
-    cursor: pointer;
-    margin-top: 30px;
-    font-size: 22px;
-}
 
 form .umrechnungs-rate {
     font-size: 17px;
